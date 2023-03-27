@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Detector de números</title>
+</head>
+<body>
+
+   <h2>Detector de palídromo</h2>
+   <div class="input-group mb-3">
+    <span class="input-group-text" >Digite uma sequência</span>
+    <input type="text" id="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>   
+  <div class="d-grid gap-2">
+    <button class="btn btn-primary" id="buttonn" type="button">Button</button>
+    
+  </div>
+   <div class="form-floating">
+    <textarea name="result" id="resultText" class="form-control" disabled ></textarea>
+    <label for="floatingTextarea">Resultado</label>
+  </div>
+
+</body>
+<script>
+    const buttonn = document.querySelector('buttonn');
+    const resultText = document.querySelector('result');
+
+
+    function palindrome (){
+    const changedText = text.splipt('').reverse().join('');
+    return text === changedText ? true : false;    
+ 
+
+    button.addEventListener('click', () => {
+    const textValue = document.querySelector('text').value;
+    const result = invertText(textValue);
+
+    result
+        ? resultText.innerHTML = 'A sequência é um palídromo'
+        : resultText.innerHTML = 'A sequência não é um palídromo';
+     });
+
+    }
+
+
+</script>
+</html>
