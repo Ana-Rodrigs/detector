@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,35 +16,35 @@
     <input type="text" id="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
   </div>   
   <div class="d-grid gap-2">
-    <button class="btn btn-primary" id="buttonn" type="button">Button</button>
+    <button class="btn btn-primary" id="button" type="button">Button</button>
     
   </div>
    <div class="form-floating">
-    <textarea name="result" id="resultText" class="form-control" disabled ></textarea>
+    <textarea name="result" id="result" class="form-control" disabled ></textarea>
     <label for="floatingTextarea">Resultado</label>
   </div>
 
 </body>
 <script>
-    const buttonn = document.querySelector('buttonn');
-    const resultText = document.querySelector('result');
+    const button = document.querySelector('#button');
+    const resultText = document.querySelector('#result');
 
 
-    function palindrome (){
-    const changedText = text.splipt('').reverse().join('');
+    function palindrome(text){
+    const changedText = text.split('').reverse().join('');
     return text === changedText ? true : false;    
  
-
+ }
     button.addEventListener('click', () => {
-    const textValue = document.querySelector('text').value;
-    const result = invertText(textValue);
+    const textValue = document.querySelector('#text').value;
+    const result = palindrome(textValue);
 
     result
         ? resultText.innerHTML = 'A sequência é um palídromo'
-        : resultText.innerHTML = 'A sequência não é um palídromo';
-     });
+        : resultText.innerHTML = 'A sequência não é um palídromo'
+    })
 
-    }
+    
 
 
 </script>
