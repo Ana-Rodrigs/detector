@@ -10,20 +10,27 @@
 </head>
 <body>
 
-   <h2>Detector de palídromo</h2>
-   <div class="input-group mb-3">
+   <h2 class="text-success">Detector de palídromo</h2>
+   <div class="container-sm">
+    <div class="row">
+      <div class="col-md-auto">
+   <div class="input-group mb-4">
     <span class="input-group-text" >Digite uma sequência</span>
     <input type="text" id="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
   </div>   
-  <div class="d-grid gap-2">
-    <button class="btn btn-primary" id="button" type="button">Button</button>
-    
-  </div>
-   <div class="form-floating">
-    <textarea name="result" id="result" class="form-control" disabled ></textarea>
-    <label for="floatingTextarea">Resultado</label>
+</div>
+</div>
+ <div class="">
+    <button class=" btn btn-outline-success mb-4 "
+    id="button" type="button" >Button</button>
   </div>
 
+  <div class="col-4  border-success">
+    <textarea name="result" id="result" class="form-control"cols="10" rows="2" disabled ></textarea> 
+  </div>  
+
+</div>
+</div>
 </body>
 <script>
     const button = document.querySelector('#button');
